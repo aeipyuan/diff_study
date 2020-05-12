@@ -24,7 +24,7 @@ let virtualDom = createElement("ul", { class: "list" }, [
 ]);
 ```
 
-![](https://gitee.com/aeipyuan/picture_bed/raw/master/images/20200512084102.png)
+![](https://imgconvert.csdnimg.cn/aHR0cHM6Ly9naXRlZS5jb20vYWVpcHl1YW4vcGljdHVyZV9iZWQvcmF3L21hc3Rlci9pbWFnZXMvMjAyMDA1MTIwODQxMDIucG5n?x-oss-process=image/format,png)
 
 #### render函数
 
@@ -65,7 +65,7 @@ function render(vDom) {/* "li", { class: "item" }, ["1"] */
     return el;
 }
 ```
-![](https://gitee.com/aeipyuan/picture_bed/raw/master/images/20200512084748.png)
+![](https://imgconvert.csdnimg.cn/aHR0cHM6Ly9naXRlZS5jb20vYWVpcHl1YW4vcGljdHVyZV9iZWQvcmF3L21hc3Rlci9pbWFnZXMvMjAyMDA1MTIwODQ3NDgucG5n?x-oss-process=image/format,png)
 
 #### renderDom
 
@@ -82,7 +82,7 @@ function renderDom(el, target) {
 
 通过js层的计算，返回一个patch对象，解析patch重新渲染更改部分
 
-![](https://gitee.com/aeipyuan/picture_bed/raw/master/images/20200511181547.png)
+![](https://imgconvert.csdnimg.cn/aHR0cHM6Ly9naXRlZS5jb20vYWVpcHl1YW4vcGljdHVyZV9iZWQvcmF3L21hc3Rlci9pbWFnZXMvMjAyMDA1MTExODE1NDcucG5n?x-oss-process=image/format,png)
 
 #### 差异计算(深度优先遍历)
 - 用javascript模拟Dom
@@ -90,7 +90,7 @@ function renderDom(el, target) {
 - 如果发生事件更改，比较两棵树变化，得到差异对象
 - 把差异应用到真实Dom
 
-![](https://gitee.com/aeipyuan/picture_bed/raw/master/images/20200511182015.png)
+![](https://imgconvert.csdnimg.cn/aHR0cHM6Ly9naXRlZS5jb20vYWVpcHl1YW4vcGljdHVyZV9iZWQvcmF3L21hc3Rlci9pbWFnZXMvMjAyMDA1MTExODIwMTUucG5n?x-oss-process=image/format,png)
 
 #### 比对规则
 - 结点类型相同，比对属性，产生一个属性的补丁包`{type:'ATTRS',attrs:{class:'list2'}}`
@@ -188,7 +188,7 @@ function diffChildren(oldChild, newChild) {
 }
 ```
 
-![](https://gitee.com/aeipyuan/picture_bed/raw/master/images/20200512093448.png)
+![](https://imgconvert.csdnimg.cn/aHR0cHM6Ly9naXRlZS5jb20vYWVpcHl1YW4vcGljdHVyZV9iZWQvcmF3L21hc3Rlci9pbWFnZXMvMjAyMDA1MTIwOTM0NDgucG5n?x-oss-process=image/format,png)
 
 
 #### 应用补丁到真实Dom
